@@ -1,0 +1,70 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("https://images.ctfassets.net/rxqefefl3t5b/6I2vL9f0IVsDQ8qFgdrxH7/7660c4bab3116a4a04025d5c4802efa5/Virgin-Red-online-shopping-offers.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 400px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formContainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper{
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .wrapper{
+         width: 100%;
+    }
+ }
+
+.form{
+    margin-top: 20px;
+    
+}
+
+#formInputItem{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+#formInputItem:invalid{
+    border: 2px solid red;
+}
+
+#btn__submit{
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: #d5bea2;
+    color: #222;
+    cursor: pointer;
+}
+
+#btn__submit:disabled{
+    background-color: gray;
+    color: #fff;
+    cursor: not-allowed;
+}
